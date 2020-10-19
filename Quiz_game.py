@@ -148,6 +148,23 @@ class Level_One(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
+        ques_frame = tk.Frame(self, height = 120, width = 600, bg = "yellow").place(x = 50, y = 50)
+        label_ques1 = tk.Label(self, text = "1. Who discovered New Caledonia and when? ", bg = "yellow",anchor="center").place(x = 50, y = 50)
+
+        Back_to_Login = tk.Button(self,text = "James Cook, 1774", width = 19, height = 1, bd = 2, bg = "white", activebackground = "white", font =('', 15, 'bold'),
+                           command=lambda: controller.show_frame("")).place(x = 80, y = 250)
+
+        Back_to_Login = tk.Button(self,text = "James Watson, 1779", width = 19, height = 1, bd = 2, bg = "white", activebackground = "white", font =('', 15, 'bold'),
+                           command=lambda: controller.show_frame("")).place(x = 390, y = 250)
+
+        Back_to_Login = tk.Button(self,text = "Benjamin Cabrera, 1776", width = 19, height = 1, bd = 2, bg = "white", activebackground = "white", font =('', 15, 'bold'),
+                           command=lambda: controller.show_frame("")).place(x = 80, y = 320)
+
+        Back_to_Login = tk.Button(self,text = "John Dalton, 1770", width = 19, height = 1, bd = 2, bg = "white", activebackground = "white", font =('', 15, 'bold'),
+                           command=lambda: controller.show_frame("")).place(x = 390, y = 320)
+
+        Back_to_Login = tk.Button(self,text = "NEXT", width = 20, height = 2, bd = 2, bg = "green", activebackground = "green", font =('', 15, 'bold'),
+                           command=lambda: controller.show_frame("")).place(x = 230, y = 380)
 
 class Level_Two(tk.Frame):
 
